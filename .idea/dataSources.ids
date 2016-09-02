@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - leaving@localhost" uuid="2e52d2cd-cfbb-40a0-9b97-1827576a0343">
+    <database-info product="MySQL" version="5.7.9-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="leaving"/>
+    <table name="employee" schema="" catalog="leaving" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Employ_Id" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Phone" sqlType="CHAR" precision="11" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Section_Id" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Order" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Limit" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Used" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="leave" schema="" catalog="leaving" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Employ_Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="StartDate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="OffDay" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Reason" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="State" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Approver" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EndDate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="section" schema="" catalog="leaving" type="TABLE">
+      <column name="Section_Id" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Section_Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Section_Manager_Id" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Section_Manager_Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Section_Id"/>
+    </table>
+    <table name="user" schema="" catalog="leaving" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+  </data-source>
+</component>
