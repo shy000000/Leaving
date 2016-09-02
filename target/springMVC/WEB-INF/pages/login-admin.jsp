@@ -75,7 +75,7 @@
 
           </div>
         </div>
-        <a href="login-employee.html"><p style="margin-top: 10px;margin-left: 120px; color: #28A4C9;">点此进入员工登陆通道>></p></a>
+        <p style="margin-top: 10px;margin-left: 120px; color: #28A4C9;">点此进入员工登陆通道>></p>
       </div>
 
     </div>

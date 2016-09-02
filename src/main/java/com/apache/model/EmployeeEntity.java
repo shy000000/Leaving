@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 /**
  * Created by shy on 2016/9/2.
+ * kkkkkk
  */
 @Entity
 @Table(name = "employee", schema = "", catalog = "leaving")
