@@ -44,7 +44,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="E:\web\Leaving\target/MANIFEST.MF" />
+        <element id="file-copy" path="D:\2015learn\LessonDesign\Leaving\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Leaving/web/Web" />
     </root>
