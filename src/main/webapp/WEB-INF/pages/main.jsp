@@ -92,7 +92,7 @@
                 </div>
               </div>
               <div class="item">
-                <img src="thirdSlide.png">
+                <img src="../images/thirdSlide.png">
 
               </div>
 
@@ -118,6 +118,22 @@
       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
           2
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title"><span><img src="../images/setting.png" width="25" height="25" /></span>
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThrees">
+            <h4 style="margin-top: -20px;margin-left: 45px;font-family: '黑体';color: #555555;">设置</h4>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <img style="margin-left: 30px;" src="../images/update.png" width="20" height="20"/><a><h5 style="margin-left: 65px;margin-top:-18px; font-family: 黑体;font-size: 110%;color: #204D74;">更新个人信息</h5></a>
+          <img style="margin-left: 30px;" src="../images/look.png" width="20" height="20"/><a><h5 style="margin-left: 65px;margin-top:-18px; font-family: 黑体;font-size: 110%;color: #204D74;">查看公司请假条例</h5></a>
+          <img style="margin-left: 24px;" src="../images/shutDown.png" width="30" height="20"/><a><h5 style="margin-left: 65px;margin-top:-18px; font-family: 黑体;font-size: 110%;color: #204D74;">注销用户登录</h5></a>
         </div>
       </div>
     </div>
