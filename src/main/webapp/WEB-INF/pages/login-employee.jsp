@@ -19,6 +19,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/form-elements.css">
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,7 +54,7 @@
               <p>输入您的工号和密码即可进入请假系统</p>
             </div>
             <div class="form-top-right">
-              <i class="fa fa-key"></i>
+              <img src="../images/key.png" />
             </div>
           </div>
           <div class="form-bottom">
