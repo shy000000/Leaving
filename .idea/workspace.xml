@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-admin.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login-admin.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.19557823" vertical-offset="1369" max-vertical-offset="2014">
-              <caret line="66" column="72" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
+            <state vertical-scroll-proportion="-12.892858" vertical-offset="285" max-vertical-offset="2014">
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -77,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-employee.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login-employee.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-employee.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.464286" vertical-offset="855" max-vertical-offset="1995">
-              <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.1292517" vertical-offset="684" max-vertical-offset="1995">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -797,12 +797,12 @@
       <workItem from="1472794484536" duration="14000" />
       <workItem from="1472801390694" duration="737000" />
       <workItem from="1472802176974" duration="7222000" />
-      <workItem from="1472876826246" duration="10451000" />
+      <workItem from="1472876826246" duration="11315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23857000" />
+    <option name="totallyTimeSpent" value="24721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1152,10 +1152,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="26315">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
           <folding>
-            <marker date="1472908576795" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472908576795" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472908576795" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472908576795" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472909752066" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472909752066" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472909752066" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472909752066" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1256,18 +1256,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-employee.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286" vertical-offset="855" max-vertical-offset="1995">
-          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="45" />
+        <state vertical-scroll-proportion="-12.892858" vertical-offset="285" max-vertical-offset="2014">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-admin.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login-employee.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19557823" vertical-offset="1369" max-vertical-offset="2014">
-          <caret line="66" column="72" selection-start-line="66" selection-start-column="72" selection-end-line="66" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.1292517" vertical-offset="684" max-vertical-offset="1995">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding />
         </state>
       </provider>
