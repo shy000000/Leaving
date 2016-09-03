@@ -9,8 +9,41 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class MainController {
+    /**
+     * 默认访问登陆界面
+     * 跳转至员工登陆界面
+     * @return
+     */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "index";
+        return "admin-search";
     }
+
+    /**
+     * 跳转至管理员登录界面
+     * @return
+     */
+    @RequestMapping(value = "/login-admin",method = RequestMethod.GET)
+    public String adminlogin(){
+        return "login-admin";
+    }
+
+    /**
+     * 用户登录
+     * @return
+     */
+    @RequestMapping(value = "/employeeLogin",method = RequestMethod.POST)
+    public String employLogin(){
+        return "mian";
+    }
+
+    /**
+     * 管理员登录
+     * @return
+     */
+    @RequestMapping(value = "/adminLogin",method = RequestMethod.POST)
+    public String adminLogin(){
+        return "admin-main";
+    }
+
 }
