@@ -99,7 +99,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xs-5"style="float: right"><button type="button" class="btn btn-warning" style=" width: 100%">删除</button></div>
+  <div class="col-xs-5"style="float: right"><button type="button" class="btn btn-danger" style=" width: 100%">删除</button></div>
 </div>
 </body>
 </html>
