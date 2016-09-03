@@ -10,7 +10,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>管理员修改用户信息</title>
+  <title>管理员筛选用户</title>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/jquery-1.12.3.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
@@ -65,9 +65,9 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Id或姓名检索">
         </div>
-        <button type="submit" class="btn btn-default">Search</button>
+        <button type="submit" class="btn btn-default" style="color: #0081C2;">Search</button>
       </form>
-
+      <button type="button" class="btn btn-default" style="margin-top: 8px;color: #EC971F;">AddNew</button>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

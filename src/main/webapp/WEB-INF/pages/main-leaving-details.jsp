@@ -24,8 +24,8 @@
     <table class="table">
       <thead>
       <tr>
-        <th>属性名</th>
-        <th>状态</th>
+        <th>属 性</th>
+        <th>值</th>
       </tr>
       </thead>
       <tbody>
@@ -99,7 +99,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xs-5"style="float: right"><button type="button" class="btn btn-danger" style=" width: 100%">删除</button></div>
+  <div class="col-xs-5"style="float:right"><button type="button" class="btn btn-danger" style=" width: 100%">删除本次申请</button></div>
 </div>
 </body>
 </html>
