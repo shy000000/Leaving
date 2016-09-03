@@ -36,7 +36,7 @@
         <img src="../images/searchLeaving.png" width="150">
         <div class="caption">
           <h3>查看请假日志</h3>
-          <p>系统管理员可以查看员工请假的历史记录，以便核对员工薪资标准</p>
+          <p>系统管理员可以随时查看员工请假的历史记录，以便核对员工薪资标准</p>
           <button class="btn btn-warning">Go to check > ><i class="fa fa-arrow-right"></i></button>
         </div>
       </div>
