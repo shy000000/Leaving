@@ -20,6 +20,7 @@
   <!-- CSS -->
 
   <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/form-elements.css">
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,7 +55,7 @@
               <p>管理员登陆后可以修改员工信息，查询请假日志</p>
             </div>
             <div class="form-top-right">
-              <i class="fa fa-key"></i>
+              <img src="../images/key.png" />
             </div>
           </div>
           <div class="form-bottom">
@@ -63,7 +64,7 @@
 
                 <label for="form-username">AdminId</label>
 
-                <input type="text" name="form-username" placeholder="管理账号..." class="form-username form-control" id="form-username">
+                <input type="text" name="form-username" placeholder="管理员账号..." class="form-username form-control" id="form-username">
 
               </div>
               <div class="form-group">
