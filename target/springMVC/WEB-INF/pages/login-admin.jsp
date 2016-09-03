@@ -32,7 +32,7 @@
   <!-- Favicon and touch icons -->
 </head>
 
-<body>
+<body background="../images/loginBackground.jpg">
 
 <!-- Top content -->
 <div class="top-content">

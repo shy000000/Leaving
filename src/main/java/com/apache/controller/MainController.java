@@ -16,7 +16,7 @@ public class MainController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "admin-modify";
+        return "login-employee";
     }
 
     /**
@@ -32,16 +32,16 @@ public class MainController {
      * 用户登录
      * @return
      */
-    @RequestMapping(value = "/employeeLogin",method = RequestMethod.POST)
+    @RequestMapping(value = "/employeeLogin",method = RequestMethod.GET)
     public String employLogin(){
-        return "mian";
+        return "main";
     }
 
     /**
      * 管理员登录
      * @return
      */
-    @RequestMapping(value = "/adminLogin",method = RequestMethod.POST)
+    @RequestMapping(value = "/adminLogin",method = RequestMethod.GET)
     public String adminLogin(){
         return "admin-main";
     }
