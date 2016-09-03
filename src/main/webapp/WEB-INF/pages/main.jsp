@@ -1,3 +1,5 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -35,7 +37,7 @@
             },
             type: 'gauge',
             detail: {formatter:"{value}%"},
-            data: [{value: 40,
+            data: [{value: 40
             }
             ]
           }
@@ -92,7 +94,29 @@
                 </div>
               </div>
               <div class="item">
-                <img src="../images/thirdSlide.png">
+                <!--
+               	作者：chenzhihao_tx@126.com
+               	时间：2016-09-03
+               	描述：请假列表table
+               -->
+               <c:if test="${!empty leavingList && leavingList != '0'}">
+                <table class="table tavble-bordered table-striped">
+                  <tr>
+                    <th style="color:#666666;font-family: '微软雅黑';">起始日期</th>
+                    <th style="color:#666666;font-family: '微软雅黑';">当前状态</th>
+                    <th style="color:#666666;font-family: '微软雅黑';">详情</th>
+                  </tr>
+                 <c:forEach items="${leavingList}" var="leaving">
+                   <tr>
+                     <td>${leaving.startDate}</td>
+                     <td>${leaving.state}</td>
+                     <td>
+                       <!--根据emplore_id查找leave表得到详情-->
+                       <a href="" type="button" class="btn btn-sm btn-default">查看</a>
+                     </td>
+                   </tr>
+                 </c:forEach>
+                </table>
 
               </div>
 
@@ -117,7 +141,31 @@
       </div>
       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
-          2
+          <!--
+                 作者：chenzhihao_tx@126.com
+                 时间：2016-09-03
+                 描述：批假列表table
+             -->
+          <c:if test="${!empty leavingList && leavingList != '0'}">
+          <table class="table tavble-bordered table-striped">
+            <tr>
+              <th style="color:#666666;font-family: '微软雅黑';">申请人</th>
+              <th style="color:#666666;font-family: '微软雅黑';">日期</th>
+              <th style="color:#666666;font-family: '微软雅黑';">状态</th>
+              <th style="color:#666666;font-family: '微软雅黑';">详情</th>
+            </tr>
+            <c:forEach items="${leavingList}" var="leaving">
+              <tr>
+                <td>${leaving.name}</td>
+                <td>${leaving.startDate}</td>
+                <td>${leaving.state}</td>
+                <td>
+                  <!--根据emplore_id查找leave表得到详情-->
+                  <a href="" type="button" class="btn btn-sm btn-default">查看</a>
+                </td>
+              </tr>
+            </c:forEach>
+          </table>
         </div>
       </div>
     </div>
