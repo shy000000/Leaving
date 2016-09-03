@@ -16,7 +16,7 @@ public class MainController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "admin-search";
+        return "admin-modify";
     }
 
     /**
