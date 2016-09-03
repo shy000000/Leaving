@@ -20,7 +20,7 @@
 <body>
 <div class="container" style="background-color:#444444">
   <center>
-    <div id="main" style="width: 400px;height:400px;"></div>
+    <div id="main" style="width: 400px;height:400px;margin-left: -18px;"></div>
     <script type="text/javascript">
       var myChart = echarts.init(document.getElementById('main'));
       var option = {
@@ -31,11 +31,11 @@
           {
             name: '已请假',
             tooltip:{
-              
+
             },
             type: 'gauge',
             detail: {formatter:"{value}%"},
-            data: [{value: 40
+            data: [{value: 40,
             }
             ]
           }
@@ -52,6 +52,7 @@
 </div>
 </br>
 </br>
+</br>
 <div class="container">
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
@@ -65,7 +66,44 @@
       </div>
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body">
-          1
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div>
+                  <label for="startDate"><h5 style="color: #666666">开始日期：</h5></label><input id="startDate" type="date" style="width: 150px" value="2014-01-13"/>
+                  </br>
+                  <label for="offDay"><h5 style="color: #666666">持续时间：</h5></label><input id="offDay" type="text" style="width: 150px" placeholder=" 3 / 天"/>
+                  </br>
+                  <label for="type"><h5 style="color: #666666">请假类型：</h5></label>
+                  <select id="type" style="font-family: '微软雅黑';" class="selectpicker" data-style="btn-info">
+                    <option>&nbsp;病 假&nbsp;</option>
+                    <option>&nbsp;产 假&nbsp;</option>
+                    <option>&nbsp;事 假&nbsp;</option>
+                  </select>
+                  </br>
+                  <label for="reason"><h5 style="color: #666666">请假原因：</h5></label><textarea id="reason" style="vertical-align: top;" rows="3" cols="21" placeholder="请填写具体的请假缘由"></textarea>
+                  </br>
+                  <button type="button" class="btn btn-success" style="margin-top: 15px;margin-left: 10px;">确认请假</button>
+                  <button type="button" class="btn btn-warning" style="margin-left: 30px;margin-top: 15px;" >重新填写</button>
+                  <img src="../images/rightToHistory.png" style="margin-left: 260px;margin-top: -150px;" width="70" height="70"/>
+                </div>
+              </div>
+              <div class="item">
+                <img src="thirdSlide.png">
+
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+
+            </a>
+          </div>
         </div>
       </div>
     </div>
