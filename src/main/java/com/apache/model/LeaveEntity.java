@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 
 /**
- * Created by shy on 2016/9/2.
+ * Created by shy on 2016/9/4.
  */
 @Entity
 @Table(name = "leave", schema = "", catalog = "leaving")

@@ -3,14 +3,14 @@ package com.apache.model;
 import javax.persistence.*;
 
 /**
- * Created by shy on 2016/9/2.
- * kkkkkk
+ * Created by shy on 2016/9/4.
  */
 @Entity
 @Table(name = "employee", schema = "", catalog = "leaving")
 public class EmployeeEntity {
     private int id;
     private String employId;
+    private String password;
     private String name;
     private String phone;
     private String sectionId;
@@ -36,6 +36,16 @@ public class EmployeeEntity {
 
     public void setEmployId(String employId) {
         this.employId = employId;
+    }
+
+    @Basic
+    @Column(name = "Password", nullable = false, insertable = true, updatable = true, length = 255)
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Basic
@@ -111,6 +121,7 @@ public class EmployeeEntity {
         if (employId != null ? !employId.equals(that.employId) : that.employId != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (order != null ? !order.equals(that.order) : that.order != null) return false;
+        if (password != null ? !password.equals(that.password) : that.password != null) return false;
         if (phone != null ? !phone.equals(that.phone) : that.phone != null) return false;
         if (sectionId != null ? !sectionId.equals(that.sectionId) : that.sectionId != null) return false;
 
@@ -121,6 +132,7 @@ public class EmployeeEntity {
     public int hashCode() {
         int result = id;
         result = 31 * result + (employId != null ? employId.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         result = 31 * result + (sectionId != null ? sectionId.hashCode() : 0);
