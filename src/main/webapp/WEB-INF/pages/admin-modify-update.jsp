@@ -81,12 +81,7 @@
         <input type="number" class="form-control" id="used" placeholder="Used">
       </div>
     </div>
-    <div class="form-group">
-      <label for="password" class="col-sm-2 control-label">登陆密码</label>
-      <div class="col-sm-4">
-        <input type="password" class="form-control" id="password" placeholder="Password">
-      </div>
-    </div>
+
 
     <div class="container">
       <div class="form-group">

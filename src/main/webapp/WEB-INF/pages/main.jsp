@@ -96,7 +96,7 @@
               <div class="item">
                 <img src="../images/employSearch.png" width="75" height="100" style="margin-top: 30px;"/>
                 <div class="col-xs-7"><button type="submit" class="btn btn-default-alt" style=" width: 90%; margin-left: 85px; margin-top: -80px;">待审批</button></div>
-                <div class="col-xs-7"><button type="button" class="btn btn-success" style=" width: 90%; margin-left: 85px; margin-top: -30px;">以批准</button></div>
+                <div class="col-xs-7"><button type="button" class="btn btn-success" style=" width: 90%; margin-left: 85px; margin-top: -30px;">已批准</button></div>
                 <div class="col-xs-7"><button type="button" class="btn btn-danger" style=" width: 90%; margin-left: 85px; margin-top: 20px;">未批准</button></div>
                 <div class="col-xs-7"><button type="button" class="btn btn-info" style=" width: 90%; margin-left: 85px; margin-top: 20px;">已销假</button></div>
                 <img src="../images/rightToNew.png" style="margin-left: 240px;margin-top: 0px;" width="70" height="70"/>
