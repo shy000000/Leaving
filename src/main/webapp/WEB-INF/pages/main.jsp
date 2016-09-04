@@ -83,17 +83,23 @@
                     <option>&nbsp;病 假&nbsp;</option>
                     <option>&nbsp;产 假&nbsp;</option>
                     <option>&nbsp;事 假&nbsp;</option>
+                    <option>&nbsp;年 假&nbsp;</option>
                   </select>
                   </br>
                   <label for="reason"><h5 style="color: #666666">请假原因：</h5></label><textarea id="reason" style="vertical-align: top;" rows="3" cols="21" placeholder="请填写具体的请假缘由"></textarea>
                   </br>
                   <button type="button" class="btn btn-success" style="margin-top: 15px;margin-left: 10px;">确认请假</button>
                   <button type="button" class="btn btn-warning" style="margin-left: 30px;margin-top: 15px;" >重新填写</button>
-                  <img src="../images/rightToHistory.png" style="margin-left: 260px;margin-top: -150px;" width="70" height="70"/>
+                  <img src="../images/rightToHistory.png" style="margin-left: 240px;margin-top: -150px;" width="70" height="70"/>
                 </div>
               </div>
               <div class="item">
-
+                <img src="../images/employSearch.png" width="75" height="100" style="margin-top: 30px;"/>
+                <div class="col-xs-7"><button type="submit" class="btn btn-default-alt" style=" width: 90%; margin-left: 85px; margin-top: -80px;">待审批</button></div>
+                <div class="col-xs-7"><button type="button" class="btn btn-success" style=" width: 90%; margin-left: 85px; margin-top: -30px;">以批准</button></div>
+                <div class="col-xs-7"><button type="button" class="btn btn-danger" style=" width: 90%; margin-left: 85px; margin-top: 20px;">未批准</button></div>
+                <div class="col-xs-7"><button type="button" class="btn btn-info" style=" width: 90%; margin-left: 85px; margin-top: 20px;">已销假</button></div>
+                <img src="../images/rightToNew.png" style="margin-left: 240px;margin-top: 0px;" width="70" height="70"/>
 
               </div>
 
@@ -118,7 +124,10 @@
       </div>
       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
-
+          <img src="../images/pull.png" width="30px" style="margin-left: 80px;margin-top: -15px;"/>
+          <img src="../images/pull.png" width="30px" style="margin-left: 90px;margin-top: -15px;"/>
+          <div class="col-xs-7"><button type="submit" class="btn btn-default-alt" style=" width: 90%;width: 80px;height: 80px; margin-left: 40px; margin-top: 0px;">待审批</button></div>
+          <div class="col-xs-7"><button type="button" class="btn btn-success" style=" width: 90%;width: 80px;height: 80px; margin-left: 165px; margin-top: -80px;">已审批</button></div>
         </div>
       </div>
     </div>
