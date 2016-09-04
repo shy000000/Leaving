@@ -40,8 +40,8 @@
       <file leaf-file-name="main-leaving-details.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/main-leaving-details.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.5221088" vertical-offset="0" max-vertical-offset="2223">
-              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45238096" vertical-offset="0" max-vertical-offset="2223">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -92,7 +92,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-19.642857" vertical-offset="1426" max-vertical-offset="2109">
               <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1472955262823" expanded="true" signature="382:2056" placeholder="..." />
+                <marker date="1472955262823" expanded="true" signature="389:837" placeholder="..." />
+                <marker date="1472955262823" expanded="true" signature="880:2048" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -840,12 +844,12 @@
       <workItem from="1472801390694" duration="737000" />
       <workItem from="1472802176974" duration="7222000" />
       <workItem from="1472876826246" duration="20257000" />
-      <workItem from="1472955114171" duration="252000" />
+      <workItem from="1472955114171" duration="854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33915000" />
+    <option name="totallyTimeSpent" value="34517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1293,14 +1297,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.642857" vertical-offset="1426" max-vertical-offset="2109">
           <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1472955262823" expanded="true" signature="382:2056" placeholder="..." />
+            <marker date="1472955262823" expanded="true" signature="389:837" placeholder="..." />
+            <marker date="1472955262823" expanded="true" signature="880:2048" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/main-leaving-details.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5221088" vertical-offset="0" max-vertical-offset="2223">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45238096" vertical-offset="0" max-vertical-offset="2223">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
