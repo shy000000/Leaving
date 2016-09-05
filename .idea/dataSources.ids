@@ -14,8 +14,8 @@
       <column name="Name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="Phone" sqlType="CHAR" precision="11" scale="0" nullable="false" jdbcType="1"/>
       <column name="Section_Id" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
-      <column name="Order" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
-      <column name="Limit" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Level" sqlType="CHAR" precision="1" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Quota" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="Used" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="Id"/>
     </table>

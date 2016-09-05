@@ -3,7 +3,7 @@ package com.apache.model;
 import javax.persistence.*;
 
 /**
- * Created by shy on 2016/9/4.
+ * Created by shy on 2016/9/5.
  */
 @Entity
 @Table(name = "employee", schema = "", catalog = "leaving")
@@ -14,8 +14,8 @@ public class EmployeeEntity {
     private String name;
     private String phone;
     private String sectionId;
-    private String order;
-    private int limit;
+    private String level;
+    private int quota;
     private int used;
 
     @Id
@@ -79,23 +79,23 @@ public class EmployeeEntity {
     }
 
     @Basic
-    @Column(name = "Order", nullable = false, insertable = true, updatable = true, length = 1)
-    public String getOrder() {
-        return order;
+    @Column(name = "Level", nullable = false, insertable = true, updatable = true, length = 1)
+    public String getLevel() {
+        return level;
     }
 
-    public void setOrder(String order) {
-        this.order = order;
+    public void setLevel(String level) {
+        this.level = level;
     }
 
     @Basic
-    @Column(name = "Limit", nullable = false, insertable = true, updatable = true)
-    public int getLimit() {
-        return limit;
+    @Column(name = "Quota", nullable = false, insertable = true, updatable = true)
+    public int getQuota() {
+        return quota;
     }
 
-    public void setLimit(int limit) {
-        this.limit = limit;
+    public void setQuota(int quota) {
+        this.quota = quota;
     }
 
     @Basic
@@ -116,11 +116,11 @@ public class EmployeeEntity {
         EmployeeEntity that = (EmployeeEntity) o;
 
         if (id != that.id) return false;
-        if (limit != that.limit) return false;
+        if (quota != that.quota) return false;
         if (used != that.used) return false;
         if (employId != null ? !employId.equals(that.employId) : that.employId != null) return false;
+        if (level != null ? !level.equals(that.level) : that.level != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
-        if (order != null ? !order.equals(that.order) : that.order != null) return false;
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
         if (phone != null ? !phone.equals(that.phone) : that.phone != null) return false;
         if (sectionId != null ? !sectionId.equals(that.sectionId) : that.sectionId != null) return false;
@@ -136,8 +136,8 @@ public class EmployeeEntity {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         result = 31 * result + (sectionId != null ? sectionId.hashCode() : 0);
-        result = 31 * result + (order != null ? order.hashCode() : 0);
-        result = 31 * result + limit;
+        result = 31 * result + (level != null ? level.hashCode() : 0);
+        result = 31 * result + quota;
         result = 31 * result + used;
         return result;
     }

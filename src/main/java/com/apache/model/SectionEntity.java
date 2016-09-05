@@ -3,7 +3,7 @@ package com.apache.model;
 import javax.persistence.*;
 
 /**
- * Created by shy on 2016/9/4.
+ * Created by shy on 2016/9/5.
  */
 @Entity
 @Table(name = "section", schema = "", catalog = "leaving")
