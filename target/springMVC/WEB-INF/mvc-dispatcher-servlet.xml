@@ -46,5 +46,47 @@
 
        <!-- 开启事务管理注解 -->
        <tx:annotation-driven transaction-manager="transactionManager"/>
+       <!-- 拦截器 -->
+       <!--管理员拦截器-->
+       <mvc:interceptors>
+              <mvc:interceptor>
+                     <mvc:mapping path="/admin/*" />
+                     <bean class="com.apache.interceptor.AdminSecurityInterceptor">
+                            <property name="excludedUrls">
+                                   <list>
+
+                                   </list>
+                            </property>
+                     </bean>
+              </mvc:interceptor>
+       </mvc:interceptors>
+       <!--员工拦截器-->
+       <mvc:interceptors>
+              <mvc:interceptor>
+                     <mvc:mapping path="/employee/*" />
+                     <bean class="com.apache.interceptor.EmployeeSecurityIntercepter">
+                            <property name="excludedUrls">
+                                   <list>
+
+                                   </list>
+                            </property>
+                     </bean>
+              </mvc:interceptor>
+       </mvc:interceptors>
+       <!--经理拦截器-->
+       <mvc:interceptors>
+              <mvc:interceptor>
+                     <mvc:mapping path="/maneger/*" />
+                     <bean class="com.apache.interceptor.ManegerSecurityIntercepter">
+                            <property name="excludedUrls">
+                                   <list>
+
+                                   </list>
+                            </property>
+                     </bean>
+              </mvc:interceptor>
+       </mvc:interceptors>
+
+
 
 </beans>

@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -22,27 +23,27 @@
 <div class="container">
   <center><h2 style="font-weight:bold; color:#666666">个人信息修改</h2></center>
   </br>
-  <form class="form-horizontal" role="form" action="">
+  <form:form class="form-horizontal" role="form" action="/employee/updateSure" method="post">
 
 
     <div class="form-group">
       <label for="name" class="col-sm-2 control-label">员工姓名</label>
       <div class="col-sm-10">
-        <input type="name" class="form-control" id="name" placeholder="Name">
+        <input type="name" class="form-control" id="name" name="name"value="${employeeEntity.name}" placeholder="Name">
       </div>
     </div>
     </br>
     <div class="form-group">
       <label for="phone" class="col-sm-2 control-label">员工电话</label>
       <div class="col-sm-10">
-        <input type="phonenumber" class="form-control" id="phone" placeholder="Phonenumber">
+        <input type="phonenumber" class="form-control" id="phone" name="phone" value="${employeeEntity.phone}" placeholder="Phonenumber">
       </div>
     </div>
     </br>
     <div class="form-group">
       <label for="password" class="col-sm-2 control-label">登陆密码</label>
       <div class="col-sm-10">
-        <input type="password" class="form-control" id="password" placeholder="Password">
+        <input type="password" class="form-control" id="password" name="password" value="${employeeEntity.password}" placeholder="Password">
       </div>
     </div>
     </br>
@@ -50,11 +51,11 @@
       <div class="form-group">
         <div class="row">
           <div class="col-xs-6"><button type="submit" class="btn btn-info" style=" width: 100%;">更新</button></div>
-          <div class="col-xs-6"><button type="button" class="btn btn-warning" style=" width: 100%;">取消</button></div>
+          <div class="col-xs-6"><button type="button" class="btn btn-warning" onclick="javascript:window.location.href='/employee/reWrite'" style=" width: 100%;">取消</button></div>
         </div>
       </div>
     </div>
-  </form>
+  </form:form>
 
 
 </div>

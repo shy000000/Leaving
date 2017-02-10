@@ -39,12 +39,13 @@
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-c3p0:5.1.0.Final" />
           <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="D:\2015learn\LessonDesign\Leaving\target/MANIFEST.MF" />
+        <element id="file-copy" path="E:\web\Leaving\target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Leaving/web/Web" />
     </root>

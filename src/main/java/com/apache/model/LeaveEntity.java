@@ -4,17 +4,17 @@ import javax.persistence.*;
 import java.sql.Date;
 
 /**
- * Created by shy on 2016/9/5.
+ * Created by shy on 2016/12/17.
  */
 @Entity
 @Table(name = "leave", schema = "", catalog = "leaving")
 public class LeaveEntity {
     private int id;
-    private int employId;
+    private String employId;
     private String name;
     private Date startDate;
     private int offDay;
-    private int type;
+    private String type;
     private String reason;
     private int state;
     private String approver;
@@ -31,12 +31,12 @@ public class LeaveEntity {
     }
 
     @Basic
-    @Column(name = "Employ_Id", nullable = false, insertable = true, updatable = true)
-    public int getEmployId() {
+    @Column(name = "Employ_Id", nullable = false, insertable = true, updatable = true, length = 11)
+    public String getEmployId() {
         return employId;
     }
 
-    public void setEmployId(int employId) {
+    public void setEmployId(String employId) {
         this.employId = employId;
     }
 
@@ -71,12 +71,12 @@ public class LeaveEntity {
     }
 
     @Basic
-    @Column(name = "Type", nullable = false, insertable = true, updatable = true)
-    public int getType() {
+    @Column(name = "Type", nullable = false, insertable = true, updatable = true, length = 10)
+    public String getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(String type) {
         this.type = type;
     }
 
@@ -127,16 +127,16 @@ public class LeaveEntity {
 
         LeaveEntity that = (LeaveEntity) o;
 
-        if (employId != that.employId) return false;
         if (id != that.id) return false;
         if (offDay != that.offDay) return false;
         if (state != that.state) return false;
-        if (type != that.type) return false;
         if (approver != null ? !approver.equals(that.approver) : that.approver != null) return false;
+        if (employId != null ? !employId.equals(that.employId) : that.employId != null) return false;
         if (endDate != null ? !endDate.equals(that.endDate) : that.endDate != null) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (reason != null ? !reason.equals(that.reason) : that.reason != null) return false;
         if (startDate != null ? !startDate.equals(that.startDate) : that.startDate != null) return false;
+        if (type != null ? !type.equals(that.type) : that.type != null) return false;
 
         return true;
     }
@@ -144,11 +144,11 @@ public class LeaveEntity {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + employId;
+        result = 31 * result + (employId != null ? employId.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (startDate != null ? startDate.hashCode() : 0);
         result = 31 * result + offDay;
-        result = 31 * result + type;
+        result = 31 * result + (type != null ? type.hashCode() : 0);
         result = 31 * result + (reason != null ? reason.hashCode() : 0);
         result = 31 * result + state;
         result = 31 * result + (approver != null ? approver.hashCode() : 0);

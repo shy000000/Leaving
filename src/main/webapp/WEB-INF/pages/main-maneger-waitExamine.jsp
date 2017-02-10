@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -33,13 +34,24 @@
     <td style="font-family:黑体; font-size:16px" colspan="2">操作</td>
   </tr>
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+  <c:forEach items="${leaveEntities}" var="wanted">
+    <tr>
+      <td>${wanted.name}</td>
+      <td>${wanted.startDate}</td>
+      <td>
+        <a href="/maneger/waitExaminelookDetails?id=${wanted.id}" type="button" class="btn btn-sm btn-default">详情</a>
+        <%--<a href="javascript:if(confirm('确认注销吗，将会停止对该用户的服务?'))window.location='/back/outUserGet?userid=${wanted.id}&pageNow=${page.pageNow}'" type="button" class="btn btn-sm btn-default">注销</a>--%>
+      </td>
+      <td>
+        <a href="/maneger/waitExamineapprove?id=${wanted.id}" type="button" class="btn btn-sm btn-default">批准</a>
+          <%--<a href="javascript:if(confirm('确认注销吗，将会停止对该用户的服务?'))window.location='/back/outUserGet?userid=${wanted.id}&pageNow=${page.pageNow}'" type="button" class="btn btn-sm btn-default">注销</a>--%>
+      </td>
+      <td>
+        <a href="/maneger/waitExaminereject?id=${wanted.id}" type="button" class="btn btn-sm btn-default">拒绝</a>
+          <%--<a href="javascript:if(confirm('确认注销吗，将会停止对该用户的服务?'))window.location='/back/outUserGet?userid=${wanted.id}&pageNow=${page.pageNow}'" type="button" class="btn btn-sm btn-default">注销</a>--%>
+      </td>
+    </tr>
+  </c:forEach>
 </table>
 
 </body>

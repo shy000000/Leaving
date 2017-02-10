@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -22,37 +23,34 @@
 <div class="container">
   <center><h2 style="font-weight:bold; color:#666666">员工信息修改</h2></center>
   </br>
-  <form style="margin-left: 320px;" class="form-horizontal" role="form" action="">
+  <form:form style="margin-left: 320px;" class="form-horizontal" role="form" action="/admin/adminModifyUpdateSure" method="post">
     <div class="form-group">
       <label for="employ_Id" class="col-sm-2 control-label">用户名</label>
       <div class="col-sm-4">
-        <input type="ID" class="form-control" id="employ_Id" placeholder="Employ_Id">
+        <input type="ID" class="form-control" id="employ_Id" name="employ_Id" value="${employeeEntity.employId}" placeholder="${employeeEntity.employId}">
       </div>
     </div>
 
     <div class="form-group">
       <label for="name" class="col-sm-2 control-label">员工姓名</label>
       <div class="col-sm-4">
-        <input type="name" class="form-control" id="name" placeholder="Name">
+        <input type="name" class="form-control" id="name" name="name" value="${employeeEntity.name}" placeholder="${employeeEntity.name}">
       </div>
     </div>
 
     <div class="form-group">
       <label for="phone" class="col-sm-2 control-label">员工电话</label>
       <div class="col-sm-4">
-        <input type="phonenumber" class="form-control" id="phone" placeholder="Phonenumber">
+        <input type="phonenumber" class="form-control" id="phone" name="phone" value="${employeeEntity.phone}" placeholder="${employeeEntity.phone}">
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-sm-2 control-label">所属部门</label>
       <div class="col-sm-4">
-        <select class="form-control">
+        <select class="form-control" name="sectionId">
           <option>1</option>
           <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
         </select>
       </div>
     </div>
@@ -60,10 +58,10 @@
     <div class="form-group">
       <label class="col-sm-2 control-label">级别</label>
       <div class="col-sm-4">
-        <select class="form-control">
+        <select class="form-control" name="level">
+          <option>0</option>
           <option>1</option>
           <option>2</option>
-          <option>3</option>
         </select>
       </div>
     </div>
@@ -71,14 +69,17 @@
     <div class="form-group">
       <label for="limit" class="col-sm-2 control-label">请假额度</label>
       <div class="col-sm-4">
-        <input type="number" class="form-control" id="limit" placeholder="Limit">
+        <input type="number" class="form-control" id="limit" name="limit" value="${employeeEntity.quota}" placeholder="${employeeEntity.quota}">
       </div>
     </div>
+
+        <input style="display:none"id="id" name="id" value="${employeeEntity.id}" placeholder="${employeeEntity.id}" >
+
 
     <div class="form-group">
       <label for="limit" class="col-sm-2 control-label">已请假天数</label>
       <div class="col-sm-4">
-        <input type="number" class="form-control" id="used" placeholder="Used">
+        <input type="number" class="form-control" id="used" name="used" value="${employeeEntity.used}" placeholder="${employeeEntity.used}">
       </div>
     </div>
 
@@ -87,13 +88,13 @@
       <div class="form-group">
         <div class="row">
           <div class="col-xs-2"><button type="submit" class="btn btn-info" style=" width: 100%;margin-left: 40px;">更新</button></div>
-          <div class="col-xs-2"><button type="button" class="btn btn-warning" style=" width: 100%;margin-left: 30px;">取消</button></div>
+          <div class="col-xs-2"><button type="button" class="btn btn-warning" onclick="javascript:window.location.href='/admin/admin-modify'" style=" width: 100%;margin-left: 30px;">取消</button></div>
         </div>
       </div>
     </div>
     </br>
     <a style="float: right;color: red;">[ 删除该员工 ]</a>
-  </form>
+  </form:form>
 
 
 </div>

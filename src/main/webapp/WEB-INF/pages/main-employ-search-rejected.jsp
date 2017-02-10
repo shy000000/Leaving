@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -27,14 +28,22 @@
   <tr align="center">
     <td style="font-family:黑体; font-size:16px">开始日期</td>
     <td style="font-family:黑体; font-size:16px">请假类型</td>
-    <td style="font-family:黑体; font-size:16px">详情</td>
+    <td style="font-family:黑体; font-size:16px">天数</td>
+    <td style="font-family:黑体; font-size:16px">操作</td>
   </tr>
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+  <c:forEach items="${leaveEntities}" var="wanted">
+    <tr>
+      <td>${wanted.startDate}</td>
+      <td>${wanted.type}</td>
+      <td>${wanted.offDay}</td>
+
+      <td>
+        <a href="/employee/waitExaminelookDetails?id=${wanted.id}" type="button" class="btn btn-sm btn-default">详情</a>
+        <%--<a href="javascript:if(confirm('确认注销吗，将会停止对该用户的服务?'))window.location='/back/outUserGet?userid=${wanted.id}&pageNow=${page.pageNow}'" type="button" class="btn btn-sm btn-default">注销</a>--%>
+      </td>
+    </tr>
+  </c:forEach>
 </table>
 
 </body>

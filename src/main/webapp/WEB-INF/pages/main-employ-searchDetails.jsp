@@ -38,7 +38,7 @@
       起始日期
     </td>
     <td id="startDate">
-
+      ${leaveEntity.startDate}
     </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@
       请假天数
     </td>
     <td id="offDay">
-
+      ${leaveEntity.offDay}
     </td>
   </tr>
   <tr>
@@ -54,7 +54,7 @@
       请假类型
     </td>
     <td id="type">
-
+      ${leaveEntity.type}
     </td>
   </tr>
   <tr>
@@ -62,7 +62,7 @@
       请假原因
     </td>
     <td id="reason">
-
+      ${leaveEntity.reason}
     </td>
   </tr>
   <tr>
@@ -70,7 +70,7 @@
       审批人
     </td>
     <td id="approver">
-
+      ${leaveEntity.approver}
     </td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@
       审批状态
     </td>
     <td id="state">
-
+      ${leaveEntity.state}
     </td>
   </tr>
   </tbody>
@@ -87,7 +87,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xs-5"style="float:right"><button type="button" class="btn btn-danger" style=" width: 100%;font-family: 黑体;">删除本次申请</button></div>
+  <div class="col-xs-5"style="float:right"><button type="button" class="btn btn-danger" onclick="javascript:window.location.href='/employee/waitExaminedelete?id=${leaveEntity.id}'" style=" width: 100%;font-family: 黑体;">删除本次申请</button></div>
 </div>
 
 </body>

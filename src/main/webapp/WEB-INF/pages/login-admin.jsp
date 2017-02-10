@@ -1,3 +1,5 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ev_Eraser
@@ -59,24 +61,34 @@
             </div>
           </div>
           <div class="form-bottom">
-            <form role="form" action="" method="post" class="login-form">
+            <form:form role="form" action="/adminLogin" method="post" class="login-form">
               <div class="form-group">
 
                 <label for="form-username">AdminId</label>
 
-                <input type="text" name="form-username" placeholder="管理员账号..." class="form-username form-control" id="form-username">
+                <input type="text" name="form-username" placeholder="管理员账号..." class="form-username form-control" id="form-username" required="required">
 
               </div>
               <div class="form-group">
                 <label for="form-password">Password</label>
-                <input type="password" name="form-password" placeholder="密码..." class="form-password form-control" id="form-password">
+                <input type="password" name="form-password" placeholder="密码..." class="form-password form-control" id="form-password" required="required">
               </div>
               <button type="submit" class="btn">Sign in!</button>
-            </form>
+            </form:form>
+            <div>
+              <c:if test="${result == 1}">
+                <p>
+                  <br/>
+                  登录失败请检查用户名或密码是否正确
+                  <br/>
+                  <br/>
+                </p>
+              </c:if>
+            </div>
 
           </div>
         </div>
-        <p style="margin-top: 10px;margin-left: 120px; color: #28A4C9;">点此进入员工登陆通道>></p>
+        <p style="margin-top: 10px;margin-left: 120px; color: #28A4C9;"><a href="/"> 点此进入员工登陆通道></a></p>
       </div>
 
     </div>

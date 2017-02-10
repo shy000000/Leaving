@@ -27,7 +27,7 @@
         <div class="caption">
           <h3>修改员工信息</h3>
           <p>系统管理员可以对公司员工的个人基本信息进行修改，修改记录会提示给员工本人</p>
-          <button class="btn btn-warning">Go to modify > ><i class="fa fa-arrow-right"></i></button>
+          <button class="btn btn-warning" onclick="javascript:window.location.href='/admin/admin-modify'">Go to modify > ><i class="fa fa-arrow-right"></i></button>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
         <div class="caption">
           <h3>查看请假日志</h3>
           <p>系统管理员可以随时查看员工请假的历史记录，以便核对员工薪资标准</p>
-          <button class="btn btn-warning">Go to check > ><i class="fa fa-arrow-right"></i></button>
+          <button class="btn btn-warning" onclick="javascript:window.location.href='/admin/admin-search'">Go to check > ><i class="fa fa-arrow-right"></i></button>
         </div>
       </div>
     </div>

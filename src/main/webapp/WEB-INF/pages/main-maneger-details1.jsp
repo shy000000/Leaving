@@ -93,13 +93,11 @@
 
 
 <div class="row">
-  <div class="col-xs-6"><button type="submit" class="btn btn-info" onclick="javascript:window.location.href='/maneger/waitExamineapprove?id=${leaveEntity.id}'" style=" width: 100%;margin-left: 15px;">准假</button></div>
-  <div class="col-xs-6"><button type="button" class="btn btn-danger" onclick="javascript:window.location.href='/maneger/waitExaminereject?id=${leaveEntity.id}'" style=" width: 100%;">拒绝</button></div>
+  <div class="col-xs-6"><button type="submit" class="btn btn-info" onclick="javascript:window.location.href='/maneger/examineddestory?id=${leaveEntity.id}'" style=" width: 100%;margin-left: 15px;">销假</button></div>
+
 </div>
 
 
 </div>
 </body>
 </html>
-
-
